@@ -100,7 +100,6 @@ export default function MyModal({isOpen, onClose}: MyModalType) {
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    
                     {openCountdown ? 'COUNT DOWN' : 'ARE YOU READY TO LAUCH A NEW SUCESSFULL STORY?' } 
                   </Dialog.Title>
                   <div className="mt-2">

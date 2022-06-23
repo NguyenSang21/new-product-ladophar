@@ -24,7 +24,7 @@ const Home: NextPage = () => {
   }
 
   return (
-    <>
+    <div className="flex flex-col justify-center items-center">
       {
         isOpenConfetti ? (
         <Confetti
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
           />
         </div>
         <div className="flex w-1/2 justify-center">
-          <div className="text-center text-5xl text-[#5F4C8B] font-semibold">
+          <div className="text-center text-5xl text-[#5F4C8B] font-semibold space-y-2">
             <p>Gian hàng và sản phẩm Ladophar</p>
             <p>trên ứng dụng ECO Merchant</p>
           </div>
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
         alt='Mountains'
         src='/LADOPHAR_LP-07.png'
         quality={100}
-        width={1980} 
+        width={1920} 
         height={351}
       />
       {
@@ -93,7 +93,7 @@ const Home: NextPage = () => {
       {
         audioUrl ? <PlayAudio src={audioUrl} /> : null
       }
-    </>
+    </div>
   )
 }
 
