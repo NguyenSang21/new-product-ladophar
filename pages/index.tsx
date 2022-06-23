@@ -19,7 +19,7 @@ const Home: NextPage = () => {
     setOpenConfetti(true);
     setTimeout(() => {
       setOpenConfetti(false);
-    }, 25000);
+    }, 10000);
     setAudioUrl(BG_AUDIO);
   }
 
@@ -28,7 +28,7 @@ const Home: NextPage = () => {
       {
         isOpenConfetti ? (
         <Confetti
-          width={1900}
+          width={width}
           height={1000}
         />
         ): null
