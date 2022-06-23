@@ -17,6 +17,7 @@
     "react-confetti": "^6.1.0",
     "react-countdown-circle-timer": "^3.0.9",
     "react-dom": "18.2.0",
+    "react-scroll": "^1.8.7",
     "react-use": "^17.4.0"
   },
   "devDependencies": {
