@@ -27,7 +27,6 @@ export default function MyModal({isOpen, onClose}: MyModalType) {
 
   const handleEndTime = () => {
     const boxElement: any = document.querySelector(".dialog-panel");
-    console.log("HẾT GIỜ RỒI ====", boxElement);
     setAudioUrl(AUDIO_2);
     // hidden box
     if(boxElement) {
@@ -96,17 +95,17 @@ export default function MyModal({isOpen, onClose}: MyModalType) {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 align-middle shadow-xl transition-all flex flex-col justify-center items-center dialog-panel">
+                <Dialog.Panel className="w-full max-w-lg transform overflow-hidden rounded-2xl bg-white p-6 align-middle shadow-xl transition-all flex flex-col justify-center items-center dialog-panel">
                   <Dialog.Title
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
                     
-                    {openCountdown ? 'Đếm ngược thời gian' : 'Bạn đã sẵn sàng?' } 
+                    {openCountdown ? 'COUNT DOWN' : 'ARE YOU READY TO LAUCH A NEW SUCESSFULL STORY?' } 
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                    {openCountdown ? 'Thời gian còn lại' : 'Nhấn vào nút bắt đầu để đếm ngược thời gian'}
+                    {openCountdown ? 'Remaining time' : 'Press start button to count down'}
                     </p>
                   </div>
                   <div className="mt-4">
@@ -125,7 +124,7 @@ export default function MyModal({isOpen, onClose}: MyModalType) {
                       className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                       onClick={handleCountdown}
                     >
-                      Bắt đầu
+                      Start
                     </button>
                     }
                   </div>

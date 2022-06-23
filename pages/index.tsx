@@ -38,8 +38,8 @@ const Home: NextPage = () => {
           alt='Mountains'
           src='/banner1.png'
           quality={100}
-          width={1980} 
-          height={1080}
+          width={1920} 
+          height={1196}
         />
       </div>
       <div className="flex content-center items-center py-10">
@@ -47,54 +47,46 @@ const Home: NextPage = () => {
           <Image
             alt='Mountains'
             src='/ladophar_phone.gif'
-            width={700}
-            height={700}
+            width={1080}
+            height={932}
           />
         </div>
         <div className="flex w-1/2 justify-center">
-          <div className="text-center text-4xl text-[#5F4C8B] font-semibold">
-            <p>Giao hàng và sản phẩm Ladophar</p>
+          <div className="text-center text-5xl text-[#5F4C8B] font-semibold">
+            <p>Gian hàng và sản phẩm Ladophar</p>
             <p>trên ứng dụng ECO Merchant</p>
           </div>
         </div>
       </div>
-      <div>
-        <Image
-          alt='Mountains'
-          src='/LADOPHAR_LP-04.png'
-          layout='responsive'
-          quality={100}
-          width={1980} 
-          height={1080}
-        />
-      </div>
-      <div>
-        <Image
-          alt='Mountains'
-          src='/banner2.png'
-          quality={100}
-          width={1980} 
-          height={1080}
-        />
-      </div>
-      <div>
-        <Image
+      <Image
+        alt='Mountains'
+        src='/LADOPHAR_LP-04.png'
+        layout='responsive'
+        quality={100}
+        width={1920} 
+        height={806}
+      />
+      <Image
+        alt='Mountains'
+        src='/banner2.png'
+        quality={100}
+        width={1920} 
+        height={889}
+      />
+      <Image
           alt='Mountains'
           src='/LADOPHAR_LP-06.png'
           quality={100}
-          width={1980} 
+          width={1920} 
           height={1394}
         />
-      </div>
-      <div>
-        <Image
-          alt='Mountains'
-          src='/LADOPHAR_LP-07.png'
-          quality={100}
-          width={1980} 
-          height={351}
-        />
-      </div>
+      <Image
+        alt='Mountains'
+        src='/LADOPHAR_LP-07.png'
+        quality={100}
+        width={1980} 
+        height={351}
+      />
       {
         isOpen ? <MyModal isOpen={isOpen} onClose={handleOnClose} /> : null
       }
