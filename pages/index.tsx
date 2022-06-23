@@ -5,7 +5,7 @@ import MyModal from '../components/MyModal'
 import Confetti from 'react-confetti'
 import useWindowSize from 'react-use/lib/useWindowSize'
 import PlayAudio from '../components/PlayAudio'
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import {  Element, scroller } from 'react-scroll'
 
 const BG_AUDIO = 'nhac-nen.mp3';
 
@@ -13,7 +13,7 @@ const Home: NextPage = () => {
   const [isOpen, setOpenModal] = React.useState(true);
   const [isOpenConfetti, setOpenConfetti] = React.useState(false);
   const [audioUrl, setAudioUrl] = React.useState('');
-  const { width, height } = useWindowSize();
+  const { width } = useWindowSize();
 
   const handleOnClose = () => {
     setOpenModal(false);
