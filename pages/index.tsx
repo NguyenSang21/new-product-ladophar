@@ -75,7 +75,7 @@ const Home: NextPage = () => {
       />
       <Image
           alt='Mountains'
-          src='/LADOPHAR_LP-06.png'
+          src='/LADOPHAR_LP-05.png'
           quality={100}
           width={1920} 
           height={1394}
