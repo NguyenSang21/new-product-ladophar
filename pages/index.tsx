@@ -17,10 +17,10 @@ const Home: NextPage = () => {
   const handleOnClose = () => {
     setOpenModal(false);
     setOpenConfetti(true);
-    // setTimeout(() => {
-    //   setOpenConfetti(false);
-    // }, 25000);
-    // setAudioUrl(BG_AUDIO);
+    setTimeout(() => {
+      setOpenConfetti(false);
+    }, 25000);
+    setAudioUrl(BG_AUDIO);
   }
 
   return (
